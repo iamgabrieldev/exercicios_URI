@@ -1,5 +1,5 @@
 while True:
-  valor, valor_contrato = map(str, input().split())
+  valor, valor_contrato = input().split()
 
   if valor == "0" and valor_contrato == "0":
     break
@@ -22,6 +22,8 @@ while True:
     else:
       lista_final.append(i)
       auxiliar+= 1
+
+  print(lista_final)
 
   if(sum(lista)==0):
     print("0")
